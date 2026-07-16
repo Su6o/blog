@@ -3,7 +3,9 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
 <html>
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +15,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-vader.css" type="text/css">
         <link rel="stylesheet" href="/main/css/styles.css">
 
-    </head>
+    </head>    
     <body>
-     <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
-        <li class="navbar">home</li>
-        <li class="navbar">blog</li>
-        <li class="navbar">project</li>
-        <li class="navbar">kudos</li> <!--for friends & credits-->
+    <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
+        <li class="navbar"><a href="index.html">home</a></li>
+        <li class="navbar"><a href="/main/html/blogs.html">blog</a></li>
+        <li class="navbar"><a href="/main/html/projects.html">projects</a></li>
+        <li class="navbar"><a href="/main/html/kudos.html">kudos</a></li> <!--for friends & credits-->
         <li style="margin-left: auto;">yet another blog</li>
      </ul>
      <hr>
@@ -32,9 +34,20 @@
      <h5>test</h5>
      <p class="tab"><i>lorem ipsum sit adem</i></p>
      
-     <h5>test</h5>
-     <p class="tab"><i>lorem ipsum sit adem</i></p>
+     <h5><a href="/main/written/windows.html">How I Switched To Linux</a></h5>
+     <p class="tab"><i>#tech #rant</i></p>
 
     </body>
 </html>
 
+<script>
+options = {
+    "outerStyle": "circle",
+    "hoverEffect": "disable",
+    "hoverItemMove": false,
+    "defaultCursor": false,
+    "outerWidth": 1,
+    "outerHeight": 1
+    }
+magicMouse(options);
+</script>

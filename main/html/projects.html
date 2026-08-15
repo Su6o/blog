@@ -3,7 +3,6 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,7 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-vader.css" type="text/css">
         <link rel="stylesheet" href="/main/css/styles.css">
-
+        <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.5/dist/baffle.min.js"></script>
     </head>
     <body>
      <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
@@ -21,7 +21,7 @@
         <li class="navbar"><a href="/main/html/blogs.html">blog</a></li>
         <li class="navbar"><a href="/main/html/projects.html">projects</a></li>
         <li class="navbar"><a href="/main/html/kudos.html">kudos</a></li> <!--for friends & credits-->
-        <li style="margin-left: auto;">yet another blog</li>
+        <li class="baffled">yet another blog</li>
      </ul>
      <hr>
      <h2>my projects</h2>
@@ -39,4 +39,7 @@ options = {
     "outerHeight": 1
     }
 magicMouse(options);
+
+let b = baffle('.baffled');
+b.reveal(1000)
 </script>

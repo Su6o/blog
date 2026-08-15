@@ -12,19 +12,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-vader.css" type="text/css">
         <link rel="stylesheet" href="/main/css/styles.css">
-        <meta name="google-site-verification" content="LyThEVIGIRhHXCqaZKGlbmTTs5R8Q2qb0oGHFThL_Qk" />
-
+        <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.5/dist/baffle.min.js"></script>
     </head>
     <body>
-     <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
+    <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
         <li class="navbar"><a href="/index.html">home</a></li>
         <li class="navbar"><a href="/main/html/blogs.html">blog</a></li>
         <li class="navbar"><a href="/main/html/projects.html">projects</a></li>
         <li class="navbar"><a href="/main/html/kudos.html">kudos</a></li> <!--for friends & credits-->
-        <li style="margin-left: auto;">yet another blog</li>
+        <li class="baffled">yet another blog</li>
      </ul>
      <hr>
      <h2> hello, I'm su6o. </h2>
     <p style="margin-top: -15px;"> yet another random person on the net!</p>
     </body>
 </html>
+
+<script>
+options = {
+    "outerStyle": "circle",
+    "hoverEffect": "disable",
+    "hoverItemMove": false,
+    "defaultCursor": false,
+    "outerWidth": 1,
+    "outerHeight": 1
+    }
+magicMouse(options);
+
+let b = baffle('.baffled');
+b.reveal(1000)
+
+</script>

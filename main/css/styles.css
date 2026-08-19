@@ -1,6 +1,22 @@
-.tab{
+
+h5{
+/* from deepseek; to fix tags in /blogs/ from being so spaced 
+apparently has to do something w/ sakura.css. (dw, not slop!)
+*/
+    margin-bottom: .1rem;
+}
+
+
+.tag{
+    display: inline flow-root; 
+    background-color: rgb(255, 193, 193); 
+    color: rgb(0, 0, 0); 
+    padding: 4px 4px; 
+    text-align: left;
+    font-family: "Elms Sans", sans-serif;
+    line-height: 15px;    
     margin-inline-start: 10px; 
-    margin-top: -20px
+    margin-bottom: 1px;
 }
 
 .navbar{
@@ -9,4 +25,14 @@
 
 .baffled{
     margin-left: auto;
+}
+
+/* https://w3collective.com/calculate-reading-time-javascript/ */
+.badge{
+    display: inline-block; 
+    background-color: #b5cfbb; 
+    color: rgb(0, 0, 0); 
+    padding: 4px 8px; 
+    text-align: left;
+    font-family: "Elms Sans", sans-serif;
 }

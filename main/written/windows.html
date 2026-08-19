@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-vader.css" type="text/css">
         <link rel="stylesheet" href="/main/css/styles.css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@900&family=Prompt&display=swap" rel="stylesheet">    
     </head>    
     <body>
     <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
@@ -28,7 +28,9 @@
      
      <h4 style="text-align: center;">How I Switched To Linux</h4>
      <p style="text-align: center; margin-top:-20px; margin-left: 150px;"> 7/15 -> 7/16/2026 </p>
+     <p class="badge"><span id="time"></span> minute read</p>
 
+     <article id="articled">
      
      <p>After using linux for ~1 year by now, I fully switched from Win10 and now use CachyOS w/ hyprland on <a href="https://github.com/HyDE-Project/HyDE">HyDE Dots</a>.</p>
      <h6>Problems with Windows</h6>
@@ -66,7 +68,9 @@
 
     <h6>the end?</h6>
     <p>I optimized more out of my pc and actually started dualbooting Win10 again for Davinci Resolve, but I got it working on Linux, so I might fully delete it. I'm actually writing this HTML on Linux. Yes, the same HyDE dots, the same CachyOS.</p>
-    </body>
+    
+    </article>
+</body>
 </html>
 
 <script>
@@ -79,4 +83,14 @@ options = {
     "outerHeight": 1
     }
 magicMouse(options);
+
+
+function readingTime() {
+  const text = document.getElementById("articled").innerText;
+  const wpm = 225;
+  const words = text.trim().split(/\s+/).length;
+  const time = Math.ceil(words / wpm);
+  document.getElementById("time").innerText = time;
+}
+readingTime();
 </script>

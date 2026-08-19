@@ -14,8 +14,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-vader.css" type="text/css">
         <link rel="stylesheet" href="/main/css/styles.css">
-
-    </head>    
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@900&family=Prompt&display=swap" rel="stylesheet">    
+    </head>
     <body>
     <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
         <li class="navbar"><a href="/index.html">home</a></li>
@@ -28,8 +28,10 @@
      
      <h4 style="text-align: center;">su6o? su4o? sudo? What?</h4>
      <p style="text-align: center; margin-top:-20px; margin-left: 225px;"> 8/12/2026 </p>
+     <p class="badge"><span id="time"></span> minute read</p>
 
-     
+     <article id="articled"></article>
+
      <p>You might be confused why my name is su6o and how it's linked to su4o, and what's the whole point of having these 2 accounts.</p>
      <h6>The Origin</h6>
      <p>My first ever account on GitHub was su4o. It was an account I used for various testing of a LOT of forks. Such as proxies and more proxies and more proxies... Ok, there was some other stuff, but proxies were the main part. I really hated how I couldn't go on websites at school, not for gaming purposes, but in general, it felt like my freedom wasn't free anymore.
@@ -52,6 +54,8 @@
     
     <h6>Fin</h6>
     <p>So if you're seeing this, you can call me by su4o, su6o, or sudo. It will give me some nostalgia calling me su4o, but I don't mind.</p>
+    
+    </article>
     </body>
 </html>
 
@@ -65,4 +69,13 @@ options = {
     "outerHeight": 1
     }
 magicMouse(options);
+
+function readingTime() {
+  const text = document.getElementById("articled").innerText;
+  const wpm = 225;
+  const words = text.trim().split(/\s+/).length;
+  const time = Math.ceil(words / wpm);
+  document.getElementById("time").innerText = time;
+}
+readingTime();
 </script>

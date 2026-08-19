@@ -15,6 +15,7 @@
         <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.5/dist/baffle.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@600&family=Prompt&display=swap" rel="stylesheet">    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 
     </head>
     <body>
@@ -35,11 +36,16 @@
      <p class="tag"><i>lorem ipsum sit adem</i></p>
 -->
      <h5><a href="/main/written/lostsu4o.html">What's su6o and su4o?</a></h5>
-     <p class="tag" style="background-color: #a5a4ff;">#rant</p>
-     
+     <div class="flex-container">
+     <div class="effect" data-tilt data-tilt-scale="1.04"><p class="tag" style="background-color: #a5a4ff;">#rant</p></div>
+     </div>
+
      <h5><a href="/main/written/windows.html">How I Switched To Linux</a></h5>
-     <p class="tag">#tech</p> <p class="tag" style="background-color: #a5a4ff;">#rant</p>
+     <div class="flex-container">
+        <div class="effect" data-tilt data-tilt-scale="1.04"><p class="tag">#tech</p> </div> 
+        <div class="effect" data-tilt data-tilt-scale="1.04"><p class="tag" style="background-color: #a5a4ff;">#rant</p> </div>
      
+    </div>
 
 
 
@@ -62,5 +68,8 @@ magicMouse(options);
 
 let b = baffle('.baffled');
 b.reveal(1000)
+
+VanillaTilt.init(document.querySelectorAll(".effect"), {
+	});
 </script>
 

@@ -3,7 +3,6 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
 <html lang="en">
     
     <head>
@@ -14,7 +13,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-vader.css" type="text/css">
         <link rel="stylesheet" href="/main/css/styles.css">
+        <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@900&family=Prompt&display=swap" rel="stylesheet">    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
     </head>    
     <body>
     <ul style="margin: 0; list-style-type: none; padding: 0; display: flex;">
@@ -37,8 +39,10 @@
      
      <p>I never actually went to Win11, just because of how it has more bloat than Win10. 
         So I always used Windows 10 Pro or Home. Now the first problem was debloating everything, which required me to use AtlasOS. I really didn't care of what the people said online about security and whatnot on AtlasOS. Back then, all I care was about performance. I use to use a insanly cheap computer from my friend.</p>
-     <img src="/main/img/aceraspire.png" alt="Acer Aspire 5750" style="width:330.75px; height:212px"> 
-     
+     <div class="flex-container">
+        <div class="effect" data-tilt data-tilt-scale="1.35">
+        <img src="/main/img/aceraspire.png" alt="Acer Aspire 5750" style="width:330.75px; height:212px"> 
+     </div> </div>
      <p>His family gave it to me after they wiped it clean and told me in a nutshell that it's useless to them. My previous computer was broken because of something with the screen & i got the <a href="https://www.dell.com/support/kbdoc/en-us/000132041/understanding-beep-codes-on-a-dell-notebook-pc#inspiron-laptop/">8 beeps of death</a>. Back then, I was just a kid, so I was way too scared to take out the screens and check the wires to see what was wrong. (+ my parents wouldn't let me).
     So keeping AtlasOS on this Acer Aspire was really some new air for this computer. I would remember downloading slimjet + using firemin to limit the ram, even though I should've used chromin, but whatever. I couldn't play any games, so it was really just used for listening to music on spotify and browsing.</p>
     
@@ -61,7 +65,9 @@
     <p>So as a happy guy, I started realizing all the problems of getting this PC. Before going onto that though, here's what my workspace looks like! Ignore how messy it is & note that I blurred the reflection of the monitor for privacy sake.
     <br>
     <br>
-    <img src="/main/img/mysetuphpz640.png" alt="My setup">
+    <div class="flex-container">
+        <div class="effect" data-tilt data-tilt-scale="1.05"><img src="/main/img/mysetuphpz640.png" alt="My setup">
+        </div> </div>
     <p>Back to the probems. I realized that my graphics card is horrible. I couldn't use hyprland on this graphics card cause of legacy drivers and discontinuation with my graphics card. So I sticked with windows for the time being. I did edit via Kdenlive still and it was a big upgrade. One day while scrolling through Facebook Marketplace, I found a Quadro 4000. It only costed 7 dollars and I was desperate for that extra GB of VRAM. (I had 1GB of VRAM on my Quadro K420). After getting this new graphics card, I realized my plan of combining the 2 cards into 1 doesnt work. So I had 2 gpus plugged in when I literally only use 1. Very power efficient past me... I did remember having endeavourOS dualbooted w/ Win10 when i got both of these gpus. Win10 was only for gaming & editing, while the rest is on Linux.</p>
     <p>After a bit of time still on windows and I forgot if i dualbooted CachyOS or not (I 100% did delete EndeavourOS though), I got a message from one of my friends. He wanted to trade a GTX 1060, and not the regular one. I found a jackpot. A <a href="https://www.msi.com/Graphics-Card/GeForce-GTX-1060-GAMING-X-6G/Specification">GeForce GTX 1060 GAMING X 6G</a>. going from 2gb to 6gb of VRAM was like more than a dream for me. All he wanted was a AIO cooler that I got, and because I wasn't using it/failed trying to use it. I gave it to him in a heartbeat. And that's how I got a GTX 1060. Crazy thing was that I was always complaining at all those budget pc youtubers for saying to find a second hand gpu from a friend, because there was no way I would actually get a friend to even give me one. But, maybe I owe them an apology.</p>
     <p>This is when I fullswitched to cachyOS. All for roblox. Yeah, wow. Sober, the application to run Roblox on Linux, was spreading around on my fyp page on youtube. People were getting crazy performance increases trying it out. And I wanted that. So i booted up  my ventoy with my CachyOS ISO and downloaded HyDE. I have tried downloading HyDE on previous setups that ive had, so the process wasn't really that new to me. And there I was, on Linux. And this is where the journey ends. Because it's now <a href="https://youtu.be/NfjsLmya1PI?si=SawJYs3w4i2uAUI2">present day, present time</a>. (sorry for the stupid reference).</p>
@@ -93,4 +99,7 @@ function readingTime() {
   document.getElementById("time").innerText = time;
 }
 readingTime();
+
+VanillaTilt.init(document.querySelectorAll(".effect"), {
+	});
 </script>

@@ -7,6 +7,14 @@ apparently has to do something w/ sakura.css. (dw, not slop!)
 }
 
 
+a:visited {
+  color: #eb99a1;
+}
+
+a:hover {
+  color: #DA4453;
+  border-bottom: 0px; 
+}
 .tag{
     display: inline flow-root; 
     background-color: rgb(255, 193, 193); 
@@ -35,4 +43,10 @@ apparently has to do something w/ sakura.css. (dw, not slop!)
     padding: 4px 8px; 
     text-align: left;
     font-family: "Elms Sans", sans-serif;
+}
+
+/* w3school docs */
+.flex-container { 
+  display: flex;
+  flex-direction: row;
 }

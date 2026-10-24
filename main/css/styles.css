@@ -50,3 +50,12 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
+
+.tippy-box[data-theme~='black'] {
+  background-color: black;
+  color: rgb(242, 253, 201);
+}
+
+.tippy-box[data-theme~='black'] > .tippy-arrow {
+  color: black;
+}

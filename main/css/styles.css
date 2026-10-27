@@ -56,6 +56,11 @@ a:hover {
   color: rgb(242, 253, 201);
 }
 
+.tippy-box[data-theme~='blackinfo'] {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
 .tippy-box[data-theme~='black'] > .tippy-arrow {
   color: black;
 }

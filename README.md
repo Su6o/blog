@@ -23,6 +23,21 @@ I didn't know how to use all these complex libraries like GSAP, but I wanted to 
 - challenge: avoiding heavy configuration and coding but still get a clean site.
 - solution: make a clean static template structure (`.template`) that makes adding & formatting new posts pretty straightforward
 
+## Screenshots
+<details> 
+   <summary></summary>
+      <img src="https://raw.githubusercontent.com/Su6o/blog/refs/heads/main/main/img/readme/read-wf-md.png" alt="homepage">
+      <img src="https://raw.githubusercontent.com/Su6o/blog/refs/heads/main/main/img/readme/read-wf-md-2.png" alt="blogpage">
+      <img src="https://raw.githubusercontent.com/Su6o/blog/refs/heads/main/main/img/readme/read-wf-md-3.png" alt="projects">
+      <img src="https://raw.githubusercontent.com/Su6o/blog/refs/heads/main/main/img/readme/read-wf-md-4.png" alt="credits">
+</details>
+
+## demos & links
+
+- live site: [read.wf.md](https://read.wf.md)
+- repo: [github.com/Su6o/blog](https://github.com/Su6o/blog)
+
+
 ## running locally
 because this is a static website, it's pretty easy to run it locally
 
@@ -37,11 +52,6 @@ because this is a static website, it's pretty easy to run it locally
    python3 -m http.server 8000
    ```
    or open the folder in vscode and use the live server extension.
-
-## demos & links
-
-- live site: [read.wf.md](https://read.wf.md)
-- repo: [github.com/Su6o/blog](https://github.com/Su6o/blog)
 
 ## ai disclosure
 
